@@ -29,6 +29,7 @@ import javax.annotation.Nullable;
 @GwtCompatible
 final class Absent<T> extends Optional<T> {
   static final Absent<Object> INSTANCE = new Absent<Object>();
+  private String myChange;
 
   @SuppressWarnings("unchecked") // implementation is "fully variant"
   static <T> Optional<T> withType() {
